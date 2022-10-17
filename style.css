@@ -93,7 +93,7 @@ body::after {
   animation: morph 10s linear infinite alternate, spin 20s linear infinite;
   z-index: 1;
   will-change: border-radius, transform;
-  transform-origin: 55% 55%;
+  transform-origin: 35% 35%;
   pointer-events: none; 
 } 
    
