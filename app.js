@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "pink",
     "green",
     "green",
-    "green",
-    "green",
+    "white",    
   ];
 
   // Tetrimino
