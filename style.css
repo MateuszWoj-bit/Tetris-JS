@@ -70,6 +70,7 @@ box-shadow: 0px 0px 0px 1px rgba(66, 68, 90, 1);
 #score{margin-left: 10px;}
 h3{ margin-top: 8vh;
   margin-left: 39vw;}
+  span{ margin-left: -20vw;}
 button{ margin-top: 2vh;
   margin-left: 39vw;
 margin-bottom: 20px;}
@@ -78,35 +79,38 @@ body{
     background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 50%,#ffa079 100%);
     background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 50%,#ffa079 100%);
     background-size:200% 420%;
-    -webkit-animation: Gradient 60s ease infinite;
-  -moz-animation: Gradient 60s ease infinite;
-  animation: Gradient 60s ease infinite;
+    -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  overflow: hidden;
 }
 
 body::before, 
 body::after {
   content: "";
-  width: 15vmax;
-  height: 15vmax;
+  width: 25vmax;
+  height: 25vmax;
   position: absolute;
   background: rgba(255, 255, 255, 0.07); 
-  animation: morph 10s linear infinite alternate, spin 20s linear infinite;
+  animation: morph 30s linear infinite alternate, spin 30s linear infinite;
   z-index: 1;
   will-change: border-radius, transform;
-  transform-origin: 35% 35%;
-  pointer-events: none; 
+  transform-origin: -15% -15%;
+  pointer-events: none;  
 } 
    
 body::after {
-    width: 15vmin;
-    height: 15vmin;
-    left: auto;    
-    top: auto;
+    width: 25vmin;
+    height: 25vmin;
+    right: 60px;    
+    top: 300px;
     bottom: 0;
-    animation: morph 60s linear infinite alternate, spin 60s linear infinite reverse;
-    transform-origin: 20% 20%; 
+    animation: morph 30s linear infinite alternate, spin 30s linear infinite reverse;
+    transform-origin: 35% 35%; 
 }
-
+body::before{
+  left: 300px;
+}
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0 50%
